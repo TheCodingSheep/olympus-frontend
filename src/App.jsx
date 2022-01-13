@@ -48,6 +48,7 @@ const useStyles = makeStyles(theme => ({
       flexShrink: 0,
     },
   },
+
   content: {
     flexGrow: 1,
     padding: theme.spacing(1),

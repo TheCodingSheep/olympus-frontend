@@ -7,7 +7,11 @@
 .MuiDrawer-paper .MuiPaper-root {
   border-radius: 0 !important;
 }
-
+.border {
+  border: 1px solid;
+  border-radius: 15px;
+  border-image-source: linear-gradient(0deg, #374151, #374151), linear-gradient(0deg, #5bf0d0, #5bf0d0);
+}
 .dapp-sidebar {
   height: 100%;
   overflow: hidden;
@@ -52,11 +56,6 @@
   }
 }
 
-.dapp-menu-bottom {
-  height: 40vh;
-  min-height: 30vh;
-}
-
 .dapp-menu-links {
   min-height: 35vh;
   display: flex;
@@ -84,6 +83,7 @@
   h6 {
     display: flex;
     align-self: center;
+    color: linear-gradient(105.85deg, #21f2ff 6.13%, #95f89e 76.86%), linear-gradient(0deg, #7bd784, #7bd784);
   }
   a {
     display: flex;
@@ -145,6 +145,10 @@
     padding-top: 3em;
     line-height: 200% !important;
     justify-content: center;
+  }
+  .dapp-menu-bottom {
+    height: none !important;
+    min-height: none !important;
   }
   .dapp-nav,
   .dapp-menu-external-links {
