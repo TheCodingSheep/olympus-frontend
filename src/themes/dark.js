@@ -7,13 +7,10 @@ import commonSettings from "./global.js";
 
 const darkTheme = {
   color: `rgba(33, 242, 255, 1)
-
   `,
   gold: `background:#FFFFFF
   box-shadow: 0px 0px 0.5px 0px #00E0FF;
-
 box-shadow: 0px 0px 0.5px 0px #FFFFFF inset;
-
   
   `,
   gray: "#FFFFFF",
@@ -23,7 +20,6 @@ box-shadow: 0px 0px 0.5px 0px #FFFFFF inset;
   `,
   paperBg: `
   background: #0F111E;
-
   box-shadow: 0px 0px 5px rgba(105, 237, 244, 0.2), 0px 0px 10px rgba(96, 213, 220, 0.2), 0px 0px 15px rgba(96, 213, 220, 0.2), 0px 0px 20px rgba(96, 213, 220, 0.2), 0px 0px 25px rgba(96, 213, 220, 0.2), 0px 0px 100px rgba(96, 213, 220, 0.05), 0px 0px 80px rgba(96, 213, 220, 0.1), 0px 0px 50px rgba(96, 213, 220, 0.3)
 ;
   `,

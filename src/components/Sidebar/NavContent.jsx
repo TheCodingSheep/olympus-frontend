@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 import { Typography as MuiTypography, withStyles } from "@material-ui/core";
 import Social from "./Social";
 import externalUrls from "./externalUrls";
-import { ReactComponent as StakeIcon } from "../../assets/icons/stake.svg";
-import { ReactComponent as BondIcon } from "../../assets/icons/bond.svg";
-import { ReactComponent as DashboardIcon } from "../../assets/icons/dashboard.svg";
-import { ReactComponent as OlympusIcon } from "../../assets/icons/olympus-nav-header.svg";
-import { ReactComponent as PoolTogetherIcon } from "../../assets/icons/33-together.svg";
+import StakeIcon from "../../assets/icons/stake.svg";
+import BondIcon from "../../assets/icons/bond.svg";
+import DashboardIcon from "../../assets/icons/dashboardicon.svg";
+import { ReactComponent as OlympusIcon } from "../../assets/icons/Powercity.svg";
+import PoolTogetherIcon from "../../assets/icons/33-together.svg";
 import { trim, shorten } from "../../helpers";
 import { useAddress, useWeb3Context } from "src/hooks/web3Context";
 import useBonds from "../../hooks/Bonds";
@@ -43,18 +43,18 @@ function NavContent() {
           <SvgIcon
             color="primary"
             component={OlympusIcon}
-            viewBox="0 0 151 100"
-            style={{ minWdth: "151px", minHeight: "98px", width: "151px" }}
+            viewBox="0 0 240 100"
+            style={{ minWidth: "240px", minHeight: "98px", width: "220px" }}
           />
         </Link>
 
-        {address && (
+        {/* {address && (
           <div className="wallet-link">
             <Link href={`https://etherscan.io/address/${address}`} target="_blank">
               {shorten(address)}
             </Link>
           </div>
-        )}
+        )} */}
       </Box>
       <div className="border">
         <Paper className="dapp-sidebar">
@@ -72,7 +72,7 @@ function NavContent() {
                     className={`button-dapp-menu ${isActive ? "active" : ""}`}
                   >
                     <Typography variant="h6" className="nav-content">
-                      <SvgIcon color="primary" component={DashboardIcon} />
+                      <img style={{ paddingRight: "10px", position: "relative", top: "5px" }} src={DashboardIcon} />
                       Dashboard
                     </Typography>
                   </Link>
@@ -87,7 +87,8 @@ function NavContent() {
                     className={`button-dapp-menu ${isActive ? "active" : ""}`}
                   >
                     <Typography variant="h6">
-                      <SvgIcon color="primary" component={StakeIcon} />
+                      {/* <SvgIcon color="primary" component={StakeIcon} /> */}
+                      <img style={{ position: "relative", top: "5px", paddingRight: "10px" }} src={StakeIcon} />
                       Stake
                     </Typography>
                   </Link>
@@ -102,8 +103,8 @@ function NavContent() {
                     className={`button-dapp-menu ${isActive ? "active" : ""}`}
                   >
                     <Typography variant="h6" className="nav-content">
-                      <SvgIcon color="primary" component={PoolTogetherIcon} />
-                      3,3 Together
+                      <img style={{ position: "relative", top: "5px", paddingRight: "10px" }} src={PoolTogetherIcon} />
+                      Calculator
                     </Typography>
                   </Link>
 
@@ -117,7 +118,8 @@ function NavContent() {
                     className={`button-dapp-menu ${isActive ? "active" : ""}`}
                   >
                     <Typography variant="h6" className="nav-content">
-                      <SvgIcon color="primary" component={BondIcon} />
+                      {/* <SvgIcon viewBox="0 0 20 20" component={BondIcon} /> */}
+                      <img style={{ position: "relative", top: "5px", paddingRight: "10px" }} src={BondIcon} />
                       Bond
                     </Typography>
                   </Link>

@@ -3,7 +3,7 @@ import { addresses, TOKEN_DECIMALS } from "../../constants";
 import { getTokenImage } from "../../helpers";
 import { useSelector } from "react-redux";
 import { Link, SvgIcon, Popper, Button, Paper, Typography, Divider, Box, Fade, Slide } from "@material-ui/core";
-import { ReactComponent as InfoIcon } from "../../assets/icons/info-fill.svg";
+import InfoIcon from "../../assets/icons/info-fill.svg";
 import { ReactComponent as ArrowUpIcon } from "../../assets/icons/arrow-up.svg";
 import { ReactComponent as sOhmTokenImg } from "../../assets/tokens/token_sOHM.svg";
 import { ReactComponent as ohmTokenImg } from "../../assets/tokens/token_OHM.svg";
@@ -68,8 +68,8 @@ function OhmMenu() {
       id="ohm-menu-button-hover"
     >
       <Button id="ohm-menu-button" size="large" variant="contained" color="secondary" title="OHM" aria-describedby={id}>
-        <SvgIcon component={InfoIcon} color="primary" />
-        <Typography>OHM</Typography>
+        <img style={{ paddingRight: "5px" }} src={InfoIcon} />
+        <Typography>WATT</Typography>
       </Button>
 
       <Popper id={id} open={open} anchorEl={anchorEl} placement="bottom-start" transition>
@@ -105,7 +105,7 @@ function OhmMenu() {
                   <Link href={`https://abracadabra.money/pool/10`} target="_blank" rel="noreferrer">
                     <Button size="large" variant="contained" color="secondary" fullWidth>
                       <Typography align="left">
-                        Wrap sOHM on Abracadabra <SvgIcon component={ArrowUpIcon} htmlColor="#A3A3A3" />
+                        Wrap sWATT on Abracadabra <SvgIcon component={ArrowUpIcon} htmlColor="#A3A3A3" />
                       </Typography>
                     </Button>
                   </Link>
@@ -138,7 +138,6 @@ function OhmMenu() {
                     </Box>
                   </Box>
                 ) : null}
-
                 <Divider color="secondary" />
                 <Link
                   href="https://docs.olympusdao.finance/using-the-website/unstaking_lp"

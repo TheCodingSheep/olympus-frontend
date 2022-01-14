@@ -100,7 +100,7 @@ function TreasuryDashboard() {
 
               <Box className="metric price">
                 <Typography variant="h6" color="textSecondary">
-                  OHM Price
+                  WATT Price
                 </Typography>
                 <Typography variant="h5">
                   {/* appleseed-fix */}
@@ -110,10 +110,10 @@ function TreasuryDashboard() {
 
               <Box className="metric wsoprice">
                 <Typography variant="h6" color="textSecondary">
-                  wsOHM Price
+                  wsWATT Price
                   <InfoTooltip
                     message={
-                      "wsOHM = sOHM * index\n\nThe price of wsOHM is equal to the price of OHM multiplied by the current index"
+                      "wsWATT = sWATT * index\n\nThe price of wsWATT is equal to the price of WATT multiplied by the current index"
                     }
                   />
                 </Typography>
@@ -138,7 +138,7 @@ function TreasuryDashboard() {
 
               <Box className="metric bpo">
                 <Typography variant="h6" color="textSecondary">
-                  Backing per OHM
+                  Backing per WATT
                 </Typography>
                 <Typography variant="h5">
                   {backingPerOhm ? formatCurrency(backingPerOhm, 2) : <Skeleton type="text" />}
@@ -150,12 +150,12 @@ function TreasuryDashboard() {
                   Current Index
                   <InfoTooltip
                     message={
-                      "The current index tracks the amount of sOHM accumulated since the beginning of staking. Basically, how much sOHM one would have if they staked and held a single OHM from day 1."
+                      "The current index tracks the amount of sWATT accumulated since the beginning of staking. Basically, how much sWATT one would have if they staked and held a single WATT from day 1."
                     }
                   />
                 </Typography>
                 <Typography variant="h5">
-                  {currentIndex ? trim(currentIndex, 2) + " sOHM" : <Skeleton type="text" />}
+                  {currentIndex ? trim(currentIndex, 2) + " sWATT" : <Skeleton type="text" />}
                 </Typography>
               </Box>
             </Box>
