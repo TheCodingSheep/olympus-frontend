@@ -178,10 +178,10 @@ function App() {
     setIsSidebarExpanded(false);
   };
 
-  let themeMode = theme === "dark" ? lightTheme : theme === "dark" ? darkTheme : gTheme;
+  let themeMode = theme === "light" ? lightTheme : theme === "dark" ? darkTheme : gTheme;
 
   useEffect(() => {
-    themeMode = theme === "dark" ? lightTheme : darkTheme;
+    themeMode = theme === "dark" ? darkTheme : darkTheme;
   }, [theme]);
 
   useEffect(() => {
