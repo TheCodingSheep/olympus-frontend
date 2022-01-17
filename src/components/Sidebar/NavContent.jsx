@@ -95,6 +95,21 @@ function NavContent() {
 
                   <Link
                     component={NavLink}
+                    id="olyzaps-nav"
+                    to="/olyzaps"
+                    isActive={(match, location) => {
+                      return checkPage(match, location, "33-together");
+                    }}
+                    className={`button-dapp-menu ${isActive ? "active" : ""}`}
+                  >
+                    <Typography variant="h6" className="nav-content">
+                      <img style={{ position: "relative", top: "5px", paddingRight: "10px" }} src={PoolTogetherIcon} />
+                      OlyZaps
+                    </Typography>
+                  </Link>
+
+                  <Link
+                    component={NavLink}
                     id="33-together-nav"
                     to="/33-together"
                     isActive={(match, location) => {

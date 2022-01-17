@@ -15,8 +15,8 @@ import { storeQueryParameters } from "./helpers/QueryParameterHelper";
 import { calcBondDetails } from "./slices/BondSlice";
 import { loadAppDetails } from "./slices/AppSlice";
 import { loadAccountDetails, calculateUserBondDetails } from "./slices/AccountSlice";
-
-import { Stake, ChooseBond, Bond, Dashboard, TreasuryDashboard, PoolTogether } from "./views";
+import Olyzaps from "./views/Olyzaps/Olyzaps";
+import { Stake, ChooseBond, Bond, Dashboard, TreasuryDashboard, PoolTogether} from "./views";
 import Sidebar from "./components/Sidebar/Sidebar.jsx";
 import TopBar from "./components/TopBar/TopBar.jsx";
 import NavDrawer from "./components/Sidebar/NavDrawer.jsx";
@@ -215,6 +215,9 @@ function App() {
 
             <Route path="/stake">
               <Stake />
+            </Route>
+            <Route path="/olyzaps">
+              <Olyzaps />
             </Route>
 
             <Route path="/33-together">
