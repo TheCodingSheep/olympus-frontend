@@ -1,5 +1,5 @@
 #olyzaps-view {
-    padding-top: 3%;
+    padding-top:3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,9 +11,9 @@
       line-height: 110% !important;
     }
 }
-.connect-wallet{
+.connect-wallet-card{
 /* UpdateGlow */
-width: 926px;
+width:87%;
 height: 168px;
 border-radius: 14px;
 background: #0F111E;
@@ -53,19 +53,19 @@ border-radius: 10px;
 margin-top: 56px;
 }
 .connect-subtitle{
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #FFFFFF; 
-  opacity: 0.6;
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #FFFFFF; 
+opacity: 0.6;
 }
 .contract-card{
 background: #0F111E;
   /* UpdateGlow */
-width: 926px;
+width:87%;
 margin-top: 24px;
 height: 436.07px;
 box-shadow: 0px 0px 5px rgba(105, 237, 244, 0.2), 0px 0px 10px rgba(96, 213, 220, 0.2), 0px 0px 15px rgba(96, 213, 220, 0.2), 0px 0px 20px rgba(96, 213, 220, 0.2), 0px 0px 25px rgba(96, 213, 220, 0.2), 0px 0px 100px rgba(96, 213, 220, 0.05), 0px 0px 80px rgba(96, 213, 220, 0.1), 0px 0px 50px rgba(96, 213, 220, 0.3);
@@ -85,10 +85,8 @@ display: flex;
 align-items: center;
 text-align: center;
 color: #FFFFFF;
+justify-content: center;
 opacity: 0.6;
-
-
-
 }
 .zap-title{
 font-family: Roboto;
@@ -98,7 +96,9 @@ font-size: 16px;
 line-height: 24px;
 display: flex;
 align-items: center;
-color: #FFFFFF
+color: #FFFFFF;
+text-align:center;
+
 }
 .zap-subtitle{
 font-family: Roboto;
@@ -108,28 +108,29 @@ font-size: 16px;
 line-height: 24px;
 display: flex;
 align-items: center;
-
 color: #FFFFFF;
 
 }
 .give-image-title{
-  display: flex;
-  flex-direction: column;
-margin-left: 127px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 
 }
 .zap-title-image{
-  display: flex;
-  flex-direction: column;
-margin-left: 48px; 
+ display: flex;
+flex-direction: column;
+align-items: center;
 }
-.swatt-title-image{
-  display: flex;
-  flex-direction: column;
-margin-left: 48px; 
+.swatt-image-title{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 .learn-button{
-  background: #0D0E21;
+background: #0D0E21;
 border: 1px solid #0AE4B5;
 box-sizing: border-box;
 display: flex;
@@ -148,4 +149,41 @@ text-align: center;
 color: #FFFFFF;
 box-shadow: 0px 0px 5px rgba(105, 237, 244, 0.2), 0px 0px 10px rgba(96, 213, 220, 0.2), 0px 0px 15px rgba(96, 213, 220, 0.2), 0px 0px 20px rgba(96, 213, 220, 0.2), 0px 0px 25px rgba(96, 213, 220, 0.2), 0px 0px 100px rgba(96, 213, 220, 0.05), 0px 0px 80px rgba(96, 213, 220, 0.1), 0px 0px 50px rgba(96, 213, 220, 0.3);
 border-radius: 10px;
+margin-bottom: -76px;
+
+}
+.arrow-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+  .connect-wallet-card{   
+    box-sizing: border-box; 
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .connect-button{
+    box-sizing: border-box; 
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .contract-card{
+    box-sizing: border-box; 
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+  }
+  .give-column{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
 }
