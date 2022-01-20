@@ -110,8 +110,8 @@ function NavContent() {
 
                   <Link
                     component={NavLink}
-                    id="33-together-nav"
-                    to="/33-together"
+                    id="calculator-nav"
+                    to="/calculator"
                     isActive={(match, location) => {
                       return checkPage(match, location, "33-together");
                     }}

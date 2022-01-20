@@ -23,7 +23,7 @@ import NavDrawer from "./components/Sidebar/NavDrawer.jsx";
 import LoadingSplash from "./components/Loading/LoadingSplash";
 import Messages from "./components/Messages/Messages";
 import NotFound from "./views/404/NotFound";
-
+import Calculator from "./views/Calculator/Calculator"
 import { dark as darkTheme } from "./themes/dark.js";
 import { light as lightTheme } from "./themes/light.js";
 import { girth as gTheme } from "./themes/girth.js";
@@ -218,6 +218,9 @@ function App() {
             </Route>
             <Route path="/olyzaps">
               <Olyzaps />
+            </Route>
+            <Route path="/calculator">
+              <Calculator />
             </Route>
 
             <Route path="/33-together">
