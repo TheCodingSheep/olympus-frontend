@@ -160,10 +160,10 @@ const Calculator = () => {
               <p className='expense mb-2'>Potential return</p>
               <p className='expense'>Potential number of Tesla Roadsters</p>
             </div>
-            <div className="column">
+            <div className="column investment-price-rate">
               <p className='expense mb-2' >$0</p>
               <p className='expense mb-2'>$0</p>
-              <p className='expense mb-2'>0 HEC</p>
+              <p className='expense mb-2'>HEC</p>
               <p className='expense mb-2'>$0</p>
               <p className='expense'>$0</p>
             </div>
