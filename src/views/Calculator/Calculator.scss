@@ -74,7 +74,7 @@ font-weight: 500;
 font-size: 18px;
 line-height: 22px;
 color: #FFFFFF;
-margin-top: 48px;
+margin-top: 12px;
 }
 .investment-price{
   display: flex;
@@ -89,6 +89,7 @@ font-weight: normal;
 font-size: 16px;
 line-height: 19px;
 color: #FFFFFF;
+margin-bottom: -24px;
 
 }
 .input-title{
@@ -117,6 +118,7 @@ width: 415px;
 height: 48px;
 outline: none;
 
+
 }
 .icon{
 font-family: Inter;
@@ -135,21 +137,18 @@ color: #FFFFFF;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
+
+
 }
 .field{
   margin-top:12px;
 }
-.css-1pnmrwp-MuiTypography-root {
-  margin: 0;
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5;
-  letter-spacing: 0.00938em;
-  color: white!important;
-
+.investment{
+  margin-bottom: -24px;
 }
+
 // Media Queries
 @media only screen and (min-width: 375px) and (max-width: 1300px) {
  

@@ -12,6 +12,7 @@ import OutlinedInput from '@mui/material/OutlinedInput';
 import Box from '@mui/material/Box';
 
 
+
 function ValueLabelComponent(props) {
   const { children, open, value } = props;
 
@@ -109,7 +110,7 @@ const Calculator = () => {
 
                 <OutlinedInput
                   className="price-field"
-
+                  defaultValue={0}
                   endAdornment={<InputAdornment position="end">Max</InputAdornment>}
                   aria-describedby="standard-weight-helper-text"
 
@@ -127,7 +128,7 @@ const Calculator = () => {
 
                 <OutlinedInput
                   className="price-field"
-
+                  value={336571.66}
                   endAdornment={<InputAdornment position="end">Current</InputAdornment>}
                   aria-describedby="standard-weight-helper-text"
 
@@ -144,9 +145,10 @@ const Calculator = () => {
               <FormControl variant="outlined" sx={{ m: 1, mt: 1, width: '50ch' }}>
 
                 <OutlinedInput
+                  defaultValue={113.75}
                   className="price-field"
 
-                  endAdornment={<InputAdornment position="end" style={{color:"white"}}>Current</InputAdornment>}
+                  endAdornment={<InputAdornment position="end" style={{ color: "white" }}>Current</InputAdornment>}
                   aria-describedby="standard-weight-helper-text"
 
                 />
@@ -158,17 +160,17 @@ const Calculator = () => {
           <div className="column">
             <p className='input-title ml-2'> Future HEC market price ($)</p>
             <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
-            <FormControl variant="outlined" sx={{ m: 1, mt: 1, width: '50ch' }}>
+              <FormControl variant="outlined" sx={{ m: 1, mt: 1, width: '50ch' }}>
 
-              <OutlinedInput
-                className="price-field"
+                <OutlinedInput
+                  className="price-field"
+                  defaultValue={113.75}
+                  endAdornment={<InputAdornment position="end">Current</InputAdornment>}
+                  aria-describedby="standard-weight-helper-text"
 
-                endAdornment={<InputAdornment position="end">Current</InputAdornment>}
-                aria-describedby="standard-weight-helper-text"
+                />
 
-              />
-
-            </FormControl>
+              </FormControl>
             </Box>
           </div>
         </div>
@@ -178,7 +180,7 @@ const Calculator = () => {
             <PrettoSlider valueLabelDisplay="auto" aria-label="pretto slider" defaultValue={20} />
           </div>
         </div>
-        <div className="columns">
+        <div className="columns investment">
           <div className="column investment-price">
             <div className="column is-11">
               <p className='expense mb-2'>Your initial investment</p>
