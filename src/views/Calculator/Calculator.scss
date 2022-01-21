@@ -113,6 +113,8 @@ display: flex;
 flex-direction: row;
 justify-content: flex-end;
 text-align: start;
+width: 415px;
+height: 48px;
 outline: none;
 
 }
@@ -138,6 +140,16 @@ color: #FFFFFF;
 .field{
   margin-top:12px;
 }
+.css-1pnmrwp-MuiTypography-root {
+  margin: 0;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  color: white!important;
+
+}
 // Media Queries
 @media only screen and (min-width: 375px) and (max-width: 1300px) {
  
@@ -156,7 +168,9 @@ color: #FFFFFF;
     flex-direction: column;
     justify-content: center;
   }
-  
+  .price-field{
+    width: 40vw;
+  }
 
 }
 @media only screen and (min-width: 375px) and (max-width: 700px) {
