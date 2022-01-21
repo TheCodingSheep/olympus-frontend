@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Calculator.scss"
 import PropTypes from 'prop-types';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import Slider from '@material-ui/core/Slider';
-import Typography from '@material-ui/core/Typography';
 import Tooltip from '@material-ui/core/Tooltip';
+import TextField from '@mui/material/TextField';
+import InputAdornment from '@mui/material/InputAdornment'
+import FormControl from '@mui/material/FormControl';
+import Input from '@mui/material/Input';
+import OutlinedInput from '@mui/material/OutlinedInput';
+import Box from '@mui/material/Box';
+
 
 function ValueLabelComponent(props) {
   const { children, open, value } = props;
@@ -93,61 +99,82 @@ const Calculator = () => {
           </div>
         </div>
         <div className="columns">
-          <div className="column">
-            <p className='input-title'>sHEC Amount</p>
-            <div class="field">
-              <p class="control has-icons-left has-icons-right">
-                <input class="input" className='price-field' type="text" placeholder="0" />
 
-                <span class="icon is-small is-right has-text-left mr-3">
-                  Max
-                </span>
-              </p>
-            </div>
+        </div>
+        <div className="columns input-column">
+          <div className="column">
+            <p className='input-title ml-2'>sHEC Amount</p>
+            <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
+              <FormControl variant="outlined" sx={{ m: 1, mt: 1, width: '50ch' }}>
+
+                <OutlinedInput
+                  className="price-field"
+
+                  endAdornment={<InputAdornment position="end">Max</InputAdornment>}
+                  aria-describedby="standard-weight-helper-text"
+
+                />
+
+              </FormControl>
+
+            </Box>
+
           </div>
           <div className="column">
-            <p className='input-title'>APY(%)</p>
-            <div class="field">
-              <p class="control has-icons-left has-icons-right">
-                <input class="input" className='price-field' type="text" placeholder="336571.66" />
+            <p className='input-title ml-2'>APY(%)</p>
+            <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
+              <FormControl variant="outlined" sx={{ m: 1, mt: 1, width: '50ch' }}>
 
-                <span class="icon is-small is-right has-text-left mr-5">
-                  Current
-                </span>
-              </p>
-            </div>
+                <OutlinedInput
+                  className="price-field"
+
+                  endAdornment={<InputAdornment position="end">Current</InputAdornment>}
+                  aria-describedby="standard-weight-helper-text"
+
+                />
+
+              </FormControl>
+            </Box>
+          </div>
+        </div>
+        <div className="columns input-column">
+          <div className="column input-column">
+            <p className='input-title ml-2'>HEC price at purchase ($)</p>
+            <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
+              <FormControl variant="outlined" sx={{ m: 1, mt: 1, width: '50ch' }}>
+
+                <OutlinedInput
+                  className="price-field"
+
+                  endAdornment={<InputAdornment position="end">Current</InputAdornment>}
+                  aria-describedby="standard-weight-helper-text"
+
+                />
+
+              </FormControl>
+            </Box>
+
+          </div>
+          <div className="column">
+            <p className='input-title ml-2'> Future HEC market price ($)</p>
+            <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
+            <FormControl variant="outlined" sx={{ m: 1, mt: 1, width: '50ch' }}>
+
+              <OutlinedInput
+                className="price-field"
+
+                endAdornment={<InputAdornment position="end">Current</InputAdornment>}
+                aria-describedby="standard-weight-helper-text"
+
+              />
+
+            </FormControl>
+            </Box>
           </div>
         </div>
         <div className="columns">
           <div className="column">
-            <p className='input-title'>HEC price at purchase ($)</p>
-            <div class="field">
-              <p class="control has-icons-left has-icons-right">
-                <input class="input" className='price-field' type="text" placeholder="113.75" />
-
-                <span class="icon is-small is-right has-text-left mr-5">
-                Current
-                </span>
-              </p>
-            </div>
-
-          </div>
-          <div className="column">
-            <p className='input-title'> Future HEC market price ($)</p>
-            <div class="field">
-              <p class="control has-icons-left has-icons-right">
-                <input class="input" className='price-field' type="text" placeholder="113.75" />
-
-                <span class="icon input-text is-small is-right  mr-5">
-                  Current
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="columns">
-          <div className="column">
-            <p className='hec-price'>HEC price at purchase ($)</p>
+            <p className='hec-price ml-2'>HEC price at purchase ($)</p>
             <PrettoSlider valueLabelDisplay="auto" aria-label="pretto slider" defaultValue={20} />
           </div>
         </div>
@@ -160,7 +187,7 @@ const Calculator = () => {
               <p className='expense mb-2'>Potential return</p>
               <p className='expense'>Potential number of Tesla Roadsters</p>
             </div>
-            <div className="column investment-price-rate">
+            <div className="column is-2 investment-price-rate">
               <p className='expense mb-2' >$0</p>
               <p className='expense mb-2'>$0</p>
               <p className='expense mb-2'>HEC</p>

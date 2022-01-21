@@ -16,7 +16,7 @@
   background: #0F111E;
 /* UpdateGlow */
 width: 87%;
-height: 776px;
+height: auto;
 box-shadow: 0px 0px 5px rgba(105, 237, 244, 0.2), 0px 0px 10px rgba(96, 213, 220, 0.2), 0px 0px 15px rgba(96, 213, 220, 0.2), 0px 0px 20px rgba(96, 213, 220, 0.2), 0px 0px 25px rgba(96, 213, 220, 0.2), 0px 0px 100px rgba(96, 213, 220, 0.05), 0px 0px 80px rgba(96, 213, 220, 0.1), 0px 0px 50px rgba(96, 213, 220, 0.3);
 border-radius: 14px;
 display: flex;
@@ -27,7 +27,7 @@ padding: 50px;
 
 }
 .calculator{
-  font-family: Inter;
+  font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 22.7368px;
@@ -37,7 +37,7 @@ color: linear-gradient(105.85deg, #21F2FF 6.13%, #95F89E 76.86%);
 margin-bottom: 10px;
 }
 .subutitle{
-  font-family: Inter;
+  font-family:Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
@@ -47,7 +47,7 @@ margin-bottom: 42px;
 
 }
 .price-rate{
-font-family: Inter;
+font-family: Poppins;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
@@ -56,9 +56,7 @@ color: #FFFFFF;
 opacity: 0.6;
 
 }
-.rate-column{
 
-}
 .price{
 
 font-family: Poppins;
@@ -70,7 +68,7 @@ color: #FFFFFF;
 
 }
 .hec-price{
-font-family: Inter;
+font-family:Inter;
 font-style: normal;
 font-weight: 500;
 font-size: 18px;
@@ -85,7 +83,7 @@ margin-top: 48px;
 
 }
 .expense{
-font-family: Inter;
+font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
@@ -94,7 +92,7 @@ color: #FFFFFF;
 
 }
 .input-title{
-  font-family: Inter;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -102,40 +100,50 @@ color: #FFFFFF;
   color: #FFFFFF;
   margin-top: 24px;
 }
+
 .price-field{
 background: #080A13;
 border: 1px solid #21F2FF;
 box-sizing: border-box;
 border-radius: 4px;
-width: 415px;
-height: 48px;
 align-items: center;
-color: white;
+color: white!important;
 font-size: 16px;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
 text-align: start;
+outline: none;
 
 }
 .icon{
-  font-family: Inter;
+font-family: Inter;
 font-style: normal;
 font-weight: 500;
-font-size: 18px;
+font-size: 16px;
 line-height: 28px;
 display: flex;
 align-items: center;
 color: #FFFFFF;
 
 
+
+.input-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 }
 .field{
   margin-top:12px;
 }
 // Media Queries
-@media only screen and (min-width: 375px) and (max-width: 812px) {
+@media only screen and (min-width: 375px) and (max-width: 1300px) {
  
   
   .calculator-card{
-      box-sizing: border-box; 
+    box-sizing: border-box; 
     width: 80%;
     padding-left: 10%;
     padding-right: 10%;
@@ -143,13 +151,30 @@ color: #FFFFFF;
     padding-bottom: 60px;
     height: auto;
   }
-  .price-field{
-    width: 60vw;
+  .input-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  .investment-price{
-    width: 100%;
-  }
-  .investment-price-rate{
+  
 
+}
+@media only screen and (min-width: 375px) and (max-width: 700px) {
+
+.investment-price{
+  width: 400px;
+}
+}
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+  .investment-price{
+    width:700px;
+  }
+}
+
+
+
+@media only screen and (min-width: 2200px) {
+.price-field{
+  width: 30vw;
 }
 }
