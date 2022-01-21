@@ -146,7 +146,7 @@ const Calculator = () => {
                 <OutlinedInput
                   className="price-field"
 
-                  endAdornment={<InputAdornment position="end">Current</InputAdornment>}
+                  endAdornment={<InputAdornment position="end" style={{color:"white"}}>Current</InputAdornment>}
                   aria-describedby="standard-weight-helper-text"
 
                 />

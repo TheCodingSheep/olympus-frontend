@@ -169,14 +169,14 @@ color: #FFFFFF;
     justify-content: center;
   }
   .price-field{
-    width: 40vw;
+    width: auto;
   }
 
 }
-@media only screen and (min-width: 375px) and (max-width: 700px) {
+@media only screen and (min-width: 300px) and (max-width: 700px) {
 
 .investment-price{
-  width: 400px;
+  width:450px;
 }
 }
 @media only screen and (min-width: 700px) and (max-width: 800px) {
