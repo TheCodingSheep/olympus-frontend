@@ -109,8 +109,9 @@ const Calculator = () => {
               <FormControl variant="outlined" sx={{ m: 1, mt: 1, width: '50ch' }}>
 
                 <OutlinedInput
+
                   className="price-field"
-                  defaultValue={0}
+      
                   endAdornment={<InputAdornment position="end">Max</InputAdornment>}
                   aria-describedby="standard-weight-helper-text"
 
@@ -128,7 +129,6 @@ const Calculator = () => {
 
                 <OutlinedInput
                   className="price-field"
-                  value={336571.66}
                   endAdornment={<InputAdornment position="end">Current</InputAdornment>}
                   aria-describedby="standard-weight-helper-text"
 
@@ -145,7 +145,6 @@ const Calculator = () => {
               <FormControl variant="outlined" sx={{ m: 1, mt: 1, width: '50ch' }}>
 
                 <OutlinedInput
-                  defaultValue={113.75}
                   className="price-field"
 
                   endAdornment={<InputAdornment position="end" style={{ color: "white" }}>Current</InputAdornment>}
@@ -164,7 +163,6 @@ const Calculator = () => {
 
                 <OutlinedInput
                   className="price-field"
-                  defaultValue={113.75}
                   endAdornment={<InputAdornment position="end">Current</InputAdornment>}
                   aria-describedby="standard-weight-helper-text"
 
